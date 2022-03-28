@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+    background-image: url(Background-car.jpg);
+    color: white;
+}
+
+/* The navigation-menu  part stars here */
+.logo {
+	  font-size: 1.5rem;
+    margin: .5rem;
+}
+
+#nav-bar {
+  	display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+.navbar-links {
+  	height: 100%;
+}
+
+.navbar-links ul {
+	  display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #66ff66;
+    padding: 1rem;
+	  color: black;
+}
+
+.navbar-links li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.navbar-links li .active {
+    background-color: #555;
+    color: white;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* The navigation-menu part ends here */
+
+
+/* The banner text starts here */
+main .banner-text{
+	text-align: center;
+	margin-top: 250px;
+}
+
+main .banner-text h1{
+	font-weight: bold;
+}
+
+main .btn{
+	background-color: #F08080;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+main .btn:hover{
+	background-color: black;
+}
+
+/* The banner text ends here */
+
+
+@media (max-width: 800px) {
+    #nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+
+}

@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+    background-image: url(Background-car.jpg);
+    color: white;
+}
+
+/* The navigation-menu  part stars here */
+.logo {
+	  font-size: 1.5rem;
+    margin: .5rem;
+}
+
+#nav-bar {
+  	display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+.navbar-links {
+  	height: 100%;
+}
+
+.navbar-links ul {
+	  display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #66ff66;
+    padding: 1rem;
+	color: black;
+}
+
+.navbar-links li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.navbar-links li .active {
+    background-color: #555;
+    color: white;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+/* The navigation-menu part ends here */
+
+/* The about us section starts here */
+main{
+	margin-top: 250px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+p.para{
+	font-family: 24
+	font-size: 15px;
+	background-color: white;
+	color: black;
+	padding: 20px;
+	margin: 0 20px 0 20px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+/* The about us section ends here */
+
+@media (max-width: 800px) {
+    #nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+
+}

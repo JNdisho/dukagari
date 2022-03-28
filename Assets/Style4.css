@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+    background-image: url(Background-car.jpg);
+    color: white;
+}
+
+/* The navigation-menu  part stars here */
+.logo {
+	  font-size: 1.5rem;
+    margin: .5rem;
+}
+
+#nav-bar {
+  	display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+.navbar-links {
+  	height: 100%;
+}
+
+.navbar-links ul {
+	  display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #66ff66;
+    padding: 1rem;
+	color: black;
+}
+
+.navbar-links li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.navbar-links li .active {
+    background-color: #555;
+    color: white;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* The navigation-menu part ends here */
+
+
+/* The contact form starts here */
+main .contact-main {
+  margin-top: 250px;
+  background-size: cover;
+  padding: 40px 0px;
+}
+
+main .contact-main h1 {
+  text-align: center;
+  color:white;
+}
+
+main .border{
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+
+main .contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+main .contact-txt-form{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0px;
+  border: 0px;
+  background-color: white;
+  padding: 20px 40px;
+}
+
+main .contact-txt-form:hover{
+  box-sizing: 0 0 10px cyan;
+}
+
+main textarea .contact-txt-form{
+  resize: none;
+  height: 120px;
+}
+
+main .contact-txt-form:focus{
+  box-shadpow: 0 0 10px 4px #34495e;
+}
+
+main .btn-send{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0px;
+  border: 0px;
+  background-color: #F08080;
+  color: white;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+
+main .btn-send:hover{
+  background-color: black;
+}
+/* The contact form ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    #nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+
+}
